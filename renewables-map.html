@@ -1,0 +1,123 @@
+index<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <style>
+    :root {
+      --chartwidth: 900px;
+    }
+
+    body {
+      max-width: 1450px;
+    }
+
+    @media screen and (max-width: 1200px) {
+
+      body {
+        padding: 50px;
+      }
+
+      .sidebar {
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 0px;
+        border: none;
+      }
+
+      .nav {
+        padding-top: 10px;
+      }
+
+      .column {
+        min-width: 100%;
+        max-width: 100%;
+        border-left: none;
+        padding: 20px;
+        margin-bottom: 60px;
+      }
+
+      .interactive-chart {
+        margin-bottom: 20px;
+      }
+
+      .static-charts-container {
+        grid-template-columns: repeat(auto-fit, 1fr);
+      }
+
+
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      iframe {
+        width: 325px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <div class="all">
+
+    <div class="sidebar">
+
+      <div class="headshot-container">
+        <a href="./index.html" style="border:none;">
+          <img src="headshot-bw.png" alt="headshot" style="width:120px;height:auto;">
+        </a>
+      </div>
+
+      <div class="sidebar-main">
+        <p>This symbol map was originally designed for <a
+            href="https://blog.datawrapper.de/fix-my-chart-map-annotations/">Fix my chart &#187; Map annotations</a></p>
+
+        <table class="nav">
+          <tr>
+            <td><a href="./consumption-multilines.html">&#171; Back</a></td>
+            <td><a href="./index.html">Home</a></td>
+            <td><a href="./squirrel-map.html">Next &#187;</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="column">
+
+      <p class="head">Interactive</p>
+      <div class="interactive-chart-desktop">
+        <iframe title="In the U.S., renewable power is a regional industry" aria-label="Map"
+          id="datawrapper-chart-QpQ8t" src="https://datawrapper.dwcdn.net/QpQ8t/3/" scrolling="no" frameborder="0"
+          style="border: none;" width="800" height="625" data-external="1"></iframe>
+      </div>
+      <div class="interactive-chart-mobile">
+        <iframe title="In the U.S., renewable power is a regional industry" aria-label="Map"
+          id="datawrapper-chart-QpQ8t" src="https://datawrapper.dwcdn.net/QpQ8t/4/" scrolling="no" frameborder="0"
+          style="width: 0; min-width: 100% !important; border: none;" height="623" data-external="1"></iframe>
+        <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+        </script>
+      </div>
+
+
+      <p class="head">Published dimensions</p>
+      <div class="static-charts-container">
+        <div class="static-charts-desktop"><img src="charts-full-transparent/renewables_map.png"></div>
+        <div class="static-charts-mobile"><img src="charts-mobile-transparent/renewables_map.png"></div>
+      </div>
+
+    </div>
+
+</body>
+
+</html>
